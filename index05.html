@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #cccccc;
+}	
+header{
+	width: 1200px;
+	height: 90px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+}
+.search{
+	margin-bottom: 10px;
+	margin-left: 45px;
+}
+#eng{
+	float: right;
+	margin-top: 23px;
+}
+nav{
+	width: 1200px;
+	height: 60px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-top: 5px;
+}
+nav:hover{
+	cursor: pointer;
+}
+.dropdown{
+	display: block;
+	position: absolute;
+}
+.dropdownContents{
+	display: none;
+	position: absolute;
+	width: 1200px;
+	height: 480px;
+	background-color: #ffffff;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+#menu1 li{
+	display: inline-block;
+	font-size: 18px;
+	margin:20px 22px;
+}
+#green1{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+#green1:hover{
+	cursor: pointer;
+}
+#menu2 li{
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+}
+.margin1{
+	margin:20px 110px 20px 20px;
+}
+.margin2{
+	margin: 90px 110px 20px 7px;
+}
+.margin3{
+	margin: 90px 60px 20px 35px;
+}
+.margin4{
+	margin: 90px 100px 20px 20px;
+	float: left;
+}
+.margin5{
+	margin: 20px 0 20px 20px;
+}
+#menu2 li:hover{
+	color: #21a089;
+}
+#menu3 li{
+	display: block;
+	margin-left: 220px;
+	font-size: 13px;
+}
+nav table{
+	border-collapse: collapse;
+	display: inline;
+}
+nav tr{
+	font-size: 12px;
+}
+nav td{
+	width: 160px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav td:hover{
+	background-color: #21a089;
+	color: white;
+}
+#t01{
+	margin-left: -160px;
+	float: left;
+}
+#t02{
+	float: right;
+	margin-top: 0;
+	margin-right: 625px;
+}
+#t03{
+	margin-left: 15px;
+}
+#t04{
+	margin-left: 90px;
+}
+#t05{
+	margin-left: 65px;
+}
+#t06{
+	margin-left: 120px;
+}
+section{
+	width: 880px;
+	height: 1355px;
+	border: 0px solid #cccccc;
+	margin-left: 300px;
+	padding: 5px 10px 10px 10px;
+}
+#section0{
+	width: 1180px;
+	height: 45px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+	margin-left: 0;
+}
+#home{
+	float: right;
+	margin-top: 35px;
+}
+.blue{
+	color: #21a089;
+}
+aside{
+	float: left;
+	width: 290px;
+	height: 750px;
+	border: 0px solid #cccccc;
+	padding-top: 5px;
+}
+#font1{
+	font-size: 25px;
+	color: #555555;
+	padding-top: 10px;
+}
+aside table{
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+aside tr{
+	font-weight: bold;
+	font-size: 17px;
+	color: #333333;
+}
+.border0{
+	border-bottom: 1px solid #cccccc;
+}
+#green2{
+	background-color: #21a089;
+	color: #ffffff;
+	border-top: 1px solid #cccccc;
+}
+aside th{
+	padding: 15px 0;
+	text-align: left;
+}
+aside th:hover{
+	cursor: pointer;
+}
+.backcolor{
+	background-color: #f5f6fa;
+}
+aside li{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+aside li:hover{
+	text-decoration: underline;
+	font-size: 17px;
+	cursor: pointer;
+}
+.rotate{
+	float: right;
+}
+.rotate:hover{
+	transform: rotate(180deg);
+}
+#font2{
+	font-size: 27px;
+	padding-bottom: 20px;
+}
+#nav0{
+	width: 880px;
+	height: 30px;
+	padding-top: 11px;
+	border-top: 2px solid #000000;
+	margin-top: 20px;
+}
+#font3{
+	font-size: 14px;
+}
+.gray{
+	color: #666666;
+}
+#eye{
+	float: right;
+}
+#main{
+	margin-top: 25px;
+}
+#list0{
+	padding-left: 30px;
+}
+.list1{
+	color: #043763;
+	list-style-image: url('D:/work/img/index01/liststyle.png');
+	font-size: 20px;
+	margin: 30px 0;
+}
+#black{
+	color: #000000;
+}
+section a{
+	color: #075290;
+}
+nav a{
+	color: #000000;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+.list2{
+	color: #000000;
+	list-style-image: url('D:/work/img/index01/liststyle2.png');
+	margin: 5px 0;
+}
+#menu4 li{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #57585a;
+	margin: 20px 11px;
+}
+#m01{
+	float: right;
+	margin-top: 30px;
+}
+section div table{
+	border-collapse: collapse;
+	border: solid 1px #cccccc;
+	margin-top: 40px;
+}
+section div td{
+	width: 220px;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #f5f6fa;
+}
+.tdcolor{
+	background-color: white;
+	color: #043763;
+	border: solid 1px #043763;
+	border-bottom: solid 5px #043763;
+}
+section div td:hover{
+	background-color: #edeef3;
+	cursor: pointer;
+}
+#gif01{
+	margin: 20px 0;
+}
+footer{
+	width: 1200px;
+	height: 150px;
+	border: 0px solid #cccccc;
+	margin-bottom: 5px;
+	background-color: #f5f6fa;
+}
+#f02{
+	float: left;
+	margin-top: 10px;
+}
+#f03{
+	float: right;
+	margin-top: 5px;
+}
+h1{
+	color: #043763;
+	font-size: 30px;
+	margin-top: 90px;
+	margin-bottom: 30px;
+}
+h4{
+	font-size: 15px; 
+
+}
+h2{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+h3{
+	margin-top: 20px;
+	margin-bottom: 130px;
+}
+h5{
+	font-size: 15px;
+}
+.green3{
+	color: #21a089;
+}
+</style>
+</head>
+<body id="page">
+<header>
+	<div>	
+	<a href='index00.html'><img src="D:\work\img\index01\kcdc.png"></a>
+	<img class="search" src="D:\work\img\index01\search01.png">
+	<img class="search" src="D:\work\img\index01\search02.png">
+	<img id="eng" src="D:\work\img\index01\eng.png">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul id="menu1">
+		<li><a href='index01.html'>감염병</a></li>
+		<li>건강정보 </li>
+		<li><a href='index02.html'>정책정보</a></li>
+		<li><a href='index03.html'>연구개발</a></li>
+		<li>알림·자료</li>
+		<li>간행물·통계</li>
+		<li><a href='index04.html'>민원·정보공개</a></li>
+		<li id="green1">기관소개</li>
+		<li>사업별홈페이지</li>
+	</ul>
+	<ul id="menu2" class="dropdownContents">
+		<li class="margin1">소개</li>
+		<li class="margin1">비전과미션</li>
+		<li class="margin1">핵심사업</li>
+		<li class="margin1">연혁</li>	
+		<li class="margin1">조직·직원찾기</li>
+		<li class="margin5">정부상징</li>
+		<li class="margin4">오시는길</li>
+		<li class="margin2">시설안내</li>
+		<li class="margin3">누리집이용안내</li>
+			<table border="0" id="t01">
+				<tr>
+					<td>인사말</td>
+				</tr>
+				<tr>
+					<td>약력</td>
+				</tr>
+				</table>
+				<table border="0" id="t02">
+				 <tr>
+					<td>이용안내</td>
+				</tr>
+				<tr>
+					<td>사이트맵</td>
+				</tr>
+				<tr>
+					<td>개인정보처리방침</td>
+				</tr>
+				<tr>
+					<td>웹접근성품질인증</td>
+				</tr>
+				<tr>
+					<td>저작권정책</td>
+				</tr>
+				<tr>
+					<td>메인배너</td>
+				</tr>
+				<tr>
+					<td>알림존</td>
+				</tr>
+				<tr>
+					<td>만족도조사</td>
+				</tr>
+			</table>
+	</ul>
+	</div>
+</nav>
+<div class="clear"></div>
+<section id="section0">
+	<div id="home"><img src="D:\work\img\index01\home.png"> > 기관소개 > 소개 > <span class="blue">인사말</span> </div>
+</section>
+<div class="clear"></div>
+<aside>
+	<span id="font1"> 기관소개
+	<table border="0" width="290">
+	<tr><th id="green2">&nbsp;소개<span class="rotate"><img src="D:\work\img\index01\up.png"></span></th></tr>
+		<div>
+		<tr><td class="backcolor"><li class="blue">인사말</li></td></tr>
+		<tr><td class="backcolor"><li>약력</li></td></tr>
+	</div>
+	<tr><th class="border0">&nbsp;비전과미션<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;핵심사업<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;연혁<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;조직·직원찾기<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;정부상징<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;오시는길<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;시설안내<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;누리집이용안내<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+</table>
+</aside>
+<section>
+	<span id="font2">인사말</span>
+	<nav id="nav0">
+	<div id="font3">
+		<span class="gray">작성일</span> 2019-05-16
+		<span class="gray">| 최종수정일</span> 2019-12-19 
+		<span class="gray">| 담당부서</span> 운영지원팀
+		<span class="gray">| 연락처</span> 043-719-7007
+		<span id="eye"><img src="D:\work\img\index01\eye.png">101,358</span>
+	</div>
+	</nav>
+		<img id="m01" src="D:\work\img\index02\m01.png">
+		<h1><span>안녕하십니까?</span><br>질병관리본부장 정은경입니다.</h1><p>
+		<h4>질병관리본부는 과학적 근거 기반의 질병 예방관리정책 추진과 보건의료 연구를 통하여 국민의 건강을 지키고, 보다 안전한 사회를 만들기 위해 최선을 다하겠습니다.</h4><p>
+		<h3><span>건강한 국민, 안전한 사회</span>를 만들겠습니다.</h3>	<p>
+		<h2><span class="green3"> 첫째,</span> 감염병으로부터 안전한 사회를 위해 24시간 365일 대응하겠습니다.</h2>
+		<h5>국제 교류 증가, 기후변화, 환경파괴 등 전 세계적으로 메르스, 에볼라열과 같은 신종감염병 위험이 증가하고 있습니다. 이와 더불어 결핵, 중증열성혈소판감소증후군, 수인성감염병 등 국내 유행 감염병도 지속 발생하고 있습니다. <br><br>
+		24시간 긴급상황실·즉각대응팀 운영, 격리병상·치료제 자원 확보, 관계 부처·지자체·의료계 협력체계 구축, 역학조사 전문 인력 양성·훈련 등을 통해 신종감염병 공중보건위기에 대비하겠습니다. <br><br>
+		국가 예방접종 사업을 확대하고 감염병 예방수칙 홍보를 통해 감염병을 예방하고 주요 감염병별 맞춤형 대책을 지속 추진하겠습니다.</h5>
+		<h2><span class="green3"> 둘째,</span> 만성질환, 희귀질환에 대한 예방관리대책을 추진하겠습니다.</h2>
+		<h5>인구 고령화에 따라 치매, 심뇌혈관질환으로 인한 질병부담이 증가하고 있습니다.<br><br>
+		만성질환 예방관리를 위한 건강지표를 생산·분석하고, 건강 문제와 건강격차 원인을 규명하여 근거 기반의 만성질환 예방관리 정책을 추진하겠습니다.<br><br>
+		희귀질환 의료비 지원, 진단 및 상담 지원, 연구를 강화하겠습니다.</h5>
+		<h2><span class="green3"> 셋째,</span> 질병 극복, 건강수명연장을 위한 질병관리 R&D를 강화하겠습니다.</h2>
+		<h5>국립보건연구원은 국가 질병관리 R&D 중추기관으로서 공공에서 반드시 수행해야 할 감염병 및 만성질환, 한국인 유전체에 대한 연구를 수행하고 있습니다.<br><br>
+		보건의료 R&D 인프라 확충을 통하여 민간연구 활성화를 지원하고, 유전체 연구, 줄기세포 및 재생의료 연구, 공공백신 개발연구 등 중점분야에 대한 선도적 연구를 수행하겠습니다.<br><br>
+		질병관리본부는 국가 공중보건관리 중추기관으로서 국민 건강을 증진하고, 공중보건 위기로부터 사회 안전을 지키기 위해, 전문성·혁신·소통·신뢰를 기반으로 24시간 365일 최선을 다하겠습니다.</h5> <br>
+		<h3>질병관리본부장 정은경</h3>
+</section>
+<div class="clear"></div>
+<nav>
+	<ul id="menu4">
+		<li>관련링크 < > </li>
+		<li>임상진료지침 디지털 가이드라인</li>
+		<li>KoGES</li>
+		<li>질병관리본부국제학술지(Osong PHRP)</li>
+		<li>만성신장병코호트연구</li>
+		<li>국민건강영양조사</li>
+		<li>국립의과학지식센터</li>
+		<li>보건복지통계</li>
+	</ul>
+</nav>
+<div class="clear"></div>
+<footer>
+	<img src="D:\work\img\index01\f01.png">
+	<img id="f02" src="D:\work\img\index01\f02.png">
+	<img id="f03" src="D:\work\img\index01\f03.png">
+</footer>
+</body>
+</html>

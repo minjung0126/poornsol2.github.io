@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #cccccc;
+}	
+header{
+	width: 1200px;
+	height: 90px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+}
+.search{
+	margin-bottom: 10px;
+	margin-left: 45px;
+}
+#eng{
+	float: right;
+	margin-top: 23px;
+}
+nav{
+	width: 1200px;
+	height: 60px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-top: 5px;
+}
+nav:hover{
+	cursor: pointer;
+}
+.dropdown{
+	display: block;
+	position: absolute;
+}
+.dropdownContents{
+	display: none;
+	position: absolute;
+	width: 1200px;
+	height: 235px;
+	background-color: #ffffff;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+#menu1 li{
+	display: inline-block;
+	font-size: 18px;
+	margin:20px 22px;
+}
+#green1{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+#green1:hover{
+	cursor: pointer;
+}
+#menu2 li{
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+}
+.margin1{
+	margin:20px 80px 80px 20px;
+}
+.margin2{
+	margin: 20px 15px 80px 0;
+}
+.margin3{
+	margin: 20px 53px 80px 23px;
+}
+.margin4{
+	margin: 20px 40px 80px 0;
+}
+#menu2 li:hover{
+	color: #21a089;
+}
+#menu3 li{
+	display: block;
+	margin-left: 220px;
+	font-size: 13px;
+}
+nav table{
+	border-collapse: collapse;
+	display: inline;
+}
+nav tr{
+	font-size: 12px;
+}
+nav td{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav td:hover{
+	background-color: #21a089;
+	color: white;
+}
+#t01{
+	margin-left: 25px;
+}
+#t02{
+	margin-left: 25px;
+}
+#t03{
+	margin-left: 15px;
+}
+#t04{
+	margin-left: 90px;
+}
+#t05{
+	margin-left: 65px;
+}
+#t06{
+	margin-left: 120px;
+}
+section{
+	width: 880px;
+	height: 3500px;
+	border: 0px solid #cccccc;
+	margin-left: 300px;
+	padding: 5px 10px 10px 10px;
+}
+#section0{
+	width: 1180px;
+	height: 45px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+	margin-left: 0;
+}
+#home{
+	float: right;
+	margin-top: 35px;
+}
+.blue{
+	color: #21a089;
+}
+aside{
+	float: left;
+	width: 290px;
+	height: 555px;
+	border: 0px solid #cccccc;
+	padding-top: 5px;
+}
+#font1{
+	font-size: 25px;
+	color: #555555;
+	padding-top: 10px;
+}
+aside table{
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+aside tr{
+	font-weight: bold;
+	font-size: 17px;
+	color: #333333;
+}
+.border0{
+	border-bottom: 1px solid #cccccc;
+}
+#green2{
+	background-color: #21a089;
+	color: #ffffff;
+	border-top: 1px solid #cccccc;
+}
+aside th{
+	padding: 15px 0;
+	text-align: left;
+}
+aside th:hover{
+	cursor: pointer;
+}
+.backcolor{
+	background-color: #f5f6fa;
+}
+aside li{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+aside li:hover{
+	text-decoration: underline;
+	font-size: 17px;
+	cursor: pointer;
+}
+.rotate{
+	float: right;
+}
+.rotate:hover{
+	transform: rotate(180deg);
+}
+#font2{
+	font-size: 27px;
+	padding-bottom: 20px;
+}
+#nav0{
+	width: 880px;
+	height: 30px;
+	padding-top: 11px;
+	border-top: 2px solid #000000;
+	margin-top: 20px;
+}
+#font3{
+	font-size: 14px;
+}
+.gray{
+	color: #666666;
+}
+#eye{
+	float: right;
+}
+#main1{
+	margin-top: 25px;
+	margin-left: 35px;
+}
+#list0{
+	padding-left: 30px;
+}
+.list1{
+	color: #000000;
+	list-style-image: url('D:/work/img/index02/liststyle.png');
+	font-size: 22px;
+	margin: 30px 0;
+}
+#black{
+	color: #000000;
+}
+section a{
+	color: #075290;
+}
+nav a{
+	color: #000000;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+.list2{
+	color: #000000;
+	list-style-image: url('D:/work/img/index01/liststyle2.png');
+	margin: 5px 0;
+}
+.list3{
+	color: #043763;
+	list-style-image: url('D:/work/img/index01/liststyle.png');
+	font-size: 20px;
+	margin: 30px 0;
+}
+#menu4 li{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #57585a;
+	margin: 20px 11px;
+}
+section table{
+	border-collapse: collapse;
+	border: solid 0px #cccccc;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 845px;
+	height: 135px;
+}
+section td{
+	text-align: center;
+	color: #555555;
+	border-bottom: solid 1px #cccccc;
+	font-size: 14px;
+}
+section th{
+	background-color: #f5f7fd;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #cccccc;
+	font-size: 14px;
+}
+.gray2{
+	color: #777777;
+	font-size: 15px;
+}
+.tableborder{
+	border-right: solid 1px #cccccc;
+	width: 135px;
+}
+#tableheight{
+	height: 175px;
+}
+.tdcolor{
+	background-color: white;
+	color: #043763;
+	border: solid 1px #043763;
+	border-bottom: solid 5px #043763;
+}
+#kakao{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+#link01{
+	margin-bottom: 48px;
+}
+section div td:hover{
+	background-color: #edeef3;
+	cursor: pointer;
+}
+#gif01{
+	margin: 20px 0;
+}
+#section1{
+	width: 880px;
+	height: 200px;
+	margin-top: 5px;
+	border: solid 0px #cccccc;
+	padding-top: 30px;
+	
+}
+#phone{
+	padding-left: 35px;
+}
+#logo1 img{
+	margin-right: 17px;
+}
+#logo2 img{
+	margin-right: 35px;
+}
+#box{
+	width: 265px;
+	height: 35px;
+	border: 1px solid #555555;
+	color: #ffffff;
+	background-color: #66768c;
+	text-align: center;
+	padding-top: 12px;
+	margin-top: 10px;
+}
+#box:hover{
+	cursor: pointer;
+	color: #ababab;
+	background-color: #ffffff;
+}
+.list4{
+	list-style-image: url('D:/work/img/index02/liststyle2.png');
+	margin: 5px 0;
+	color: #000000;
+}
+#table2{
+	width: 745px;
+	height: 180px;
+	float: right;
+	margin-top: -3px;
+	border: 0px solid #cccccc;
+}
+#table2 td{
+	height: 13px;
+	text-align: left;
+	font-size: 13px;
+	padding-bottom: 1px;
+	border: 0px solid #cccccc;
+}
+#table2 td:hover{
+	background-color: #f9f9f9;
+	cursor: pointer;
+}
+#gray3{
+	color: #888888;
+	padding-left: 20px;
+}
+footer{
+	width: 1200px;
+	height: 150px;
+	border: 0px solid #cccccc;
+	margin-bottom: 5px;
+	background-color: #f5f6fa;
+}
+#f02{
+	float: left;
+	margin-top: 10px;
+}
+#f03{
+	float: right;
+	margin-top: 5px;
+}
+</style>
+</head>
+<body id="page">
+<header>
+	<div>	
+	<a href='index00.html'><img src="D:\work\img\index01\kcdc.png"></a>
+	<img class="search" src="D:\work\img\index01\search01.png">
+	<img class="search" src="D:\work\img\index01\search02.png">
+	<img id="eng" src="D:\work\img\index01\eng.png">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul id="menu1">
+		<li><a href='index01.html'>감염병</a></li>
+		<li>건강정보 </li>
+		<li><a href='index02.html'>정책정보</a></li>
+		<li><a href='index03.html'>연구개발</a></li>
+		<li>알림·자료</li>
+		<li>간행물·통계</li>
+		<li id="green1">민원·정보공개</li>
+		<li><a href='index05.html'>기관소개</a></li>
+		<li>사업별홈페이지</li>
+	</ul>
+	<ul id="menu2" class="dropdownContents">
+		<li class="margin1">1339콜센터</li>
+		<li class="margin1"><a href="https://www.epeople.go.kr/nep/crtf/userLogn.npaid?returnUrl=%2Fnep%2Fpttn%2FgnrlPttn%2FPttnRqstWrtnInfo.paid" target="_blank">민원신청<img src="D:\work\img\index01\link02.png"></a></li>
+		<li class="margin1"><a href="https://www.epeople.go.kr/nep/crtf/userLogn.npaid?returnUrl=%2Fnep%2FutilHistory%2Fuser%2FMySmgMain.paid" target="_blank">나의민원확인<img src="D:\work\img\index01\link02.png"></a></li>
+		<li class="margin2">생명윤리법관련민원안내</li>	
+		<li class="margin3">사전정보공표</li>
+		<li class="margin1"><a href="https://www.open.go.kr/search/list/govm_org.do" target="_blank">정보공개청구<img src="D:\work\img\index01\link02.png"></a></li>
+		<li class="margin1">공공데이터</li>	
+		<li class="margin3">기관장업무추진비</li>
+		<li class="margin4">공무국외여행보고서</li>
+	</ul>
+	</div>
+</nav>
+<div class="clear"></div>
+<section id="section0">
+	<div id="home"><img src="D:\work\img\index01\home.png"> > 민원·정보공개 >  <span class="blue">1339콜센터</span> </div>
+</section>
+<div class="clear"></div>
+<aside>
+	<span id="font1"> 민원·정보공개
+	<table border="0" width="290">
+	<tr><th id="green2">&nbsp;1339콜센터<span class="rotate"><img src="D:\work\img\index01\up.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;민원신청<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;나의민원확인<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;생명윤리법관련민원안내<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;사전정보공표<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;정보공개청구<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;공공데이터<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;기관장업무추진비<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;공무국외여행보고서<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+</table>
+</aside>
+<section>
+	<span id="font2">1339콜센터</span>
+	<nav id="nav0">
+	<div id="font3">
+		<span class="gray">작성일</span> 2019-05-15 
+		<span class="gray">| 최종수정일</span> 2020-03-31 
+		<span class="gray">| 담당부서</span> 위기소통담당관
+		<span class="gray">| 연락처</span> 043-719-7794
+		<span id="eye"><img src="D:\work\img\index01\eye.png">131,009</span>
+	</div>
+	</nav>
+		<ul id="list0">
+			<li class="list1">소개</li>
+				<ul>
+					<li class="list2">질병정보 궁금할 때, 감염병이 의심될 때 질병관리본부 콜센터 ☎1339로 문의하세요!</li>
+					<li class="list2">언제 어디서나 1339로 전화하시면, 질병관련 정보와 상담서비스를 신속하고 정확하게 제공해드립니다.</li>
+				</ul>
+				<img id="main1" src="D:\work\img\index02\main1.png">
+			<li class="list1">이용안내</li>
+				<ul>
+					<li class="list2">대표번호 : 국번없이 1339(무료)</li>
+					<li class="list2">운영시간 : 365일 24시간</li>
+					<li class="list2">외국인 상담 : 상담을 원하는 국내 체류 외국인은 <a href="https://kto.visitkorea.or.kr/kor/kto/guide.kto" target="_blank">한국관광공사 관광안내센터(☎1330)<img src="D:\work\img\index01\link01.png" width="20"></a>와 <a href="http://www.moj.go.kr/moj/196/subview.do" target="_blank">법무부 외국인종합안내센터(☎1345)<img src="D:\work\img\index01\link01.png" width="20"></a>와의 3자통화를 통해 상담을 받으실 수 있습니다. </li><br>
+				</ul>
+				<table border="0">
+					☎<a href="https://kto.visitkorea.or.kr/kor/customer/call/1330.kto" target="_blank">1330<img src="D:\work\img\index01\link01.png" width="20"></a>관광통역안내전화 운영시간 및 상담언어(8개국어)
+					<tr>
+						<th class="tableborder">이용시간</th>
+						<th>언어</th>
+					</tr>
+					<tr>
+						<td class="tableborder">24시간</td>
+						<td>한국어, 영어, 중국어, 일본어</td>
+					</tr>
+					<tr>
+						<td class="tableborder">08:00 ~ 19:00</td>
+						<td>베트남어, 태국어, 말레이 또는 인도네시아어, 러시아어</td>
+					</tr>
+				</table>
+				<span class="gray2">* 주요상담기능: 숙박예약, 교통, 문화, 입장권, 외국어통역 등</span><br><br>
+				<table  id="tableheight" border="0">
+					☎1345 외국인종합안내센터 운영시간 및 상담언어(20개국어)
+					<tr>
+						<th class="tableborder">이용시간</th>
+						<th>언어</th>
+					</tr>
+					<tr>
+						<td class="tableborder">09:00 ~ 22:00</td>
+						<td>한국어, 중국어, 영어</td>
+					</tr>
+					<tr>
+						<td class="tableborder">09:00 ~ 18:00</td>
+						<td>베트남어, 타이어, 일본어, 몽골어, 인도네시아어/말레이어, 프랑스어, 방글라데시어,<br> 파키스탄어, 러시아어, 네팔어, 캄보디아어, 미얀마어, 독일어, 스페인어, 필리핀어,<br> 아랍어, 싱할라어</td>
+					</tr>
+				</table>
+				<span class="gray2">* 주요상담기능: 외국인 행정 및 생활종합안내(출입국, 초청, 비자, 체류, 귀화, 난민, 이민 등)</span><br><br>
+				<ul>
+					<li class="list2">해외이용 안내 : 해외→국내에서 이용 시, +82-2-2633-1339, +82-2-2163-5945번으로 이용가능(유료)</li>
+					<li class="list2">콜백서비스 : 상담원이 모두 통화 중일 경우, 상담 가능한 번호를 남기시면 상담원이 연락드리겠습니다.</li>
+				</ul>
+			<li class="list1">상담안내</li>
+				<ul>
+					<li class="list2">주요 감염병(<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NA0014&icdgrpCd=01&icdSubgrpCd=" target="_blank">메르스<img src="D:\work\img\index01\link01.png" width="20"></a>, <a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NC0026&icdgrpCd=03&icdSubgrpCd=" target="_blank">지카바이러스<img src="D:\work\img\index01\link01.png" width="20"></a> 등) 상담 및 조치사항 안내</li>
+					<li class="list2">해외여행 입ㆍ출국자에 대한 감염병, 필수 예방접종, 예방법 등 안내</li>
+					<li class="list2">법정감염병 예방방법, 발생 신고 기준 및 절차 등 안내</li>
+					<li class="list2">결핵안심국가 잠복결핵 관련 치료권유 및 상담안내</li>
+					<li class="list2">질병관리본부 업무에 관련한 민원상담 및 담당자 연결</li>
+				</ul>
+			<li class="list1">질병관리본부 카카오톡 서비스</li>
+				<ul>
+					<li class="list2">감염병, 만성질환, 예방접종 등 실생활에 필요한 질병·건강정보 제공</li>
+					<li class="list2">언제 어디서나 카카오톡을 통한 실시간 1:1상담서비스</li>
+				</ul>
+				<a href="https://pf.kakao.com/_XrQxkM" target="_blank"><img id="kakao" src="D:\work\img\index02\kakao.png"></a>
+				<img id="link01" src="D:\work\img\index01\link01.png">
+				<ul>
+					<li class="list3">카카오톡을 통한 질병·건강정보 제공 및 실시간 1:1 상담</li>
+				</ul>
+				<div id="phone">
+				<img src="D:\work\img\index02\phone1.png">
+				<img src="D:\work\img\index02\phone1.png">
+				</div>
+				<li class="list1">1339 콜센터 로고 및 슬로건</li>
+				<ul>
+					<li class="list3">로고(국문, 영문)</li>
+					<div id="logo1">
+						<img src="D:\work\img\index02\logo1.png">
+						<img src="D:\work\img\index02\logo2.png">
+						<img src="D:\work\img\index02\logo3.png">
+					</div>
+					<li class="list3">슬로건(가로형, 세로형)</li>
+					<div id="logo2">
+						<img src="D:\work\img\index02\logo4.png">
+						<img src="D:\work\img\index02\logo5.png">
+					</div>
+				</ul>
+				<center><div id="box"><img src="D:\work\img\index02\download.png" width="14">&nbsp;로고 및 슬로건 다운로드</div></center>
+		</ul>
+</section>
+<div class="clear"></div>
+<section id="section1">
+	
+	<table id="table2" border="0">
+		<tr><td><li class="list4">질병관리본부_1339_웹배너JPG.jpg</li></td></tr>
+		<tr><td><li class="list4">질병관리본부_1339_웹배너PDF.pdf</li></td></tr>
+		<tr><td><li class="list4">질병_질병정보(420X594)-홍보포스터JPG.JPG</li></td></tr>
+		<tr><td><li class="list4">질병_질병정보(420X594)-홍보포스터JPG(저용량).jpg</li></td></tr>
+		<tr><td><li class="list4">질병_질병정보(420X594)-홍보포스터PDF.pdf</li></td></tr>
+		<tr><td><li class="list4">질병관리본부_질병정보x배너JPG.jpg</li></td></tr>
+		<tr><td><li class="list4">질병관리본부_질병정보x배너PDF.pdf</li></td></tr>
+	</table>
+	<span id="gray3">첨부파일</span>
+</section>
+<div class="clear"></div>
+<nav>
+	<ul id="menu4">
+		<li>관련링크 < > </li>
+		<li>임상진료지침 디지털 가이드라인</li>
+		<li>KoGES</li>
+		<li>질병관리본부국제학술지(Osong PHRP)</li>
+		<li>만성신장병코호트연구</li>
+		<li>국민건강영양조사</li>
+		<li>국립의과학지식센터</li>
+		<li>보건복지통계</li>
+	</ul>
+</nav>
+<div class="clear"></div>
+<footer>
+	<img src="D:\work\img\index01\f01.png">
+	<img id="f02" src="D:\work\img\index01\f02.png">
+	<img id="f03" src="D:\work\img\index01\f03.png">
+</footer>
+</body>
+</html>

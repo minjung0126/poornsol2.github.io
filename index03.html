@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #cccccc;
+}	
+header{
+	width: 1200px;
+	height: 90px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+}
+.search{
+	margin-bottom: 10px;
+	margin-left: 45px;
+}
+#eng{
+	float: right;
+	margin-top: 23px;
+}
+nav{
+	width: 1200px;
+	height: 60px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-top: 5px;
+}
+nav:hover{
+	cursor: pointer;
+}
+.dropdown{
+	display: block;
+	position: absolute;
+}
+.dropdownContents{
+	display: none;
+	position: absolute;
+	width: 1200px;
+	height: 230px;
+	background-color: #ffffff;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+	border: 1px solid #cccccc;
+}
+#menu1 li{
+	display: inline-block;
+	font-size: 18px;
+	margin:20px 22px;
+}
+#green1{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+.margin1{
+	margin:20px 110px 20px 20px;
+}
+.margin2{
+	margin: 20px 100px 20px 9px;
+}
+.margin3{
+	margin: 20px 60px 20px 10px;
+}
+#menu2 li{
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+}
+#menu2 li:hover{
+	color: #21a089;
+}
+#menu3 li{
+	display: block;
+	margin-left: 220px;
+	font-size: 13px;
+}
+nav a{
+	color: #000000;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+nav table{
+	border-collapse: collapse;
+	display: inline;
+}
+nav tr{
+	font-size: 12px;
+}
+nav td{
+	width: 180px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav td:hover{
+	background-color: #21a089;
+	color: white;
+}
+section{
+	width: 880px;
+	height: 100px;
+	border: 1px solid #cccccc;
+	margin-left: 300px;
+	padding: 5px 10px 10px 10px;
+}
+#section0{
+	width: 1180px;
+	height: 45px;
+	margin-top: 5px;
+	border: 0px solid #cccccc;
+	margin-left: 0;
+}	
+#t01{
+	margin-left: 20px;
+}
+#marginmenu1{
+	float: right;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+#s01{
+	margin-left: 25px;
+	margin-top: 30px;
+}
+aside{
+	float: left;
+	width: 290px;
+	height: 355px;
+	border: 0px solid #cccccc;
+	padding-top: 5px;
+}
+#font1{
+	font-size: 25px;
+	color: #555555;
+	padding-top: 10px;
+}
+aside table{
+	border-collapse: collapse;
+	margin-top: 23px;
+}
+aside tr{
+	font-weight: bold;
+	font-size: 17px;
+	color: #333333;
+}
+.border0{
+	border-bottom: 1px solid #cccccc;
+}
+#green2{
+	background-color: #21a089;
+	color: #ffffff;
+	border-top: 1px solid #cccccc;
+}
+aside th{
+	padding: 15px 0;
+	text-align: left;
+}
+aside th:hover{
+	cursor: pointer;
+}
+.backcolor{
+	background-color: #f5f6fa;
+}
+aside li{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+aside li:hover{
+	text-decoration: underline;
+	font-size: 17px;
+	cursor: pointer;
+}
+.rotate{
+	float: right;
+}
+.rotate:hover{
+	transform: rotate(180deg);
+}
+#nav0{
+	width: 880px;
+	height: 240px;
+	border-top: 2px solid #000000;
+	margin-top: 20px;
+	float: right;
+}
+#home{
+	float: right;
+	margin-top: 35px;
+}
+.blue{
+	color: #21a089;
+}
+#section2{
+	width: 880px;
+	height: 250px;
+	border: 0px solid #cccccc;
+	border-top: 2px solid #000000;
+	border-bottom: 1px solid #cccccc;
+}
+#section3{
+	width: 880px;
+	height: 45px;
+	border: 0px solid #cccccc;
+}
+#section4{
+	width: 880px;
+	height: 250px;
+	border: 0px solid #cccccc;
+}
+#font2{
+	font-size: 27px;
+	padding-bottom: 20px;
+}
+#text1{
+	float: right;
+	padding: 5px;
+}
+#aside2{
+	float: right;
+	width: 600px;
+	height: 150px;
+	border: 0px solid #cccccc;
+	margin-top: 30px;
+	padding-top: 50px;
+}
+footer{
+	width: 1200px;
+	height: 150px;
+	border: 0px solid #cccccc;
+	margin-bottom: 5px;
+	background-color: #f5f6fa;
+}
+#f02{
+	float: left;
+	margin-top: 10px;
+}
+#f03{
+	float: right;
+	margin-top: 5px;
+}
+#menu4 li{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #57585a;
+	margin: 20px 11px;
+}
+#box{
+	width: 420px;
+	height: 40px;
+	border: 1px solid #043763;
+	text-align: center;
+	padding-top: 15px;
+	margin: 5px;
+	display: inline-block;
+}
+#box:hover{
+	background-color: #043763;
+	cursor: pointer;
+	color: #ffffff;
+}
+section a{
+	color: #043763;
+}
+section a:hover{
+	color: #ffffff;
+}
+h4{
+	color: #666666;
+}
+</style>
+</head>
+<body id="page">
+<header>
+	<div>	
+	<a href='index00.html'><img src="D:\work\img\index01\kcdc.png"></a>
+	<img class="search" src="D:\work\img\index01\search01.png">
+	<img class="search" src="D:\work\img\index01\search02.png">
+	<img id="eng" src="D:\work\img\index01\eng.png">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul id="menu1">
+		<li><a href='index01.html'>감염병</a></li>
+		<li>건강정보 </li>
+		<li><a href='index02.html'>정책정보</a></li>
+		<li id="green1">연구개발</li>
+		<li>알림·자료</li>
+		<li>간행물·통계</li>
+		<li><a href='index04.html'>민원·정보공개</a></li>
+		<li><a href='index05.html'>기관소개</a></li>
+		<li>사업별홈페이지</li>
+	</ul>
+	<ul id="menu2" class="dropdownContents">
+		<a href="http://www.nih.go.kr/" target="_blank"><img id="marginmenu1" src="D:/work/img/index02/menu1.png"></a>
+		<li class="margin1">질병연구</li>
+		<li class="margin2"><a href="https://www.cdc.go.kr/board/board.es?mid=a40801000000&bid=0050" target="_blank">연구성과<img src="D:\work\img\index01\link02.png"></a></li>
+		<li class="margin2"><a href="http://www.cdc.go.kr/contents.es?mid=a40401010000" target="_blank">연구자원인프라<img src="D:\work\img\index01\link02.png"></a></li>
+		<li class="margin2"><a href="http://www.cdc.go.kr/contents.es?mid=a40701010000" target="_blank">생명윤리<img src="D:\work\img\index01\link02.png"></a></li><br>
+
+			<table border="0" id="t01">
+				<tr>
+					<td>질병연구</td>
+				</tr>
+				<tr>
+					<td>범부처감염병대응R&D</td>
+				</tr>
+				<tr>
+					<td>수사기술수요조사</td>
+				</tr>
+				</table>
+			
+	</ul>
+	</div>
+</nav>
+<div class="clear"></div>
+<section id="section0">
+	<div id="home"><img src="D:\work\img\index01\home.png"> > 연구개발 > 질병연구 > <span class="blue">질병연구</span> </div>
+</section>
+<div class="clear"></div>
+<aside>
+	<span id="font1"> 연구개발
+	<table border="0" width="290">
+	<tr><th id="green2">&nbsp;질병연구<span class="rotate"><img src="D:\work\img\index01\up.png"></span></th></td></tr>
+		<div>
+		<tr><td class="backcolor"><li class="blue">질병연구</li></td></tr>
+		<tr><td class="backcolor"><li>범부처감염병대응R&D</li></td></tr>
+		<tr><td class="backcolor"><li>수시기술수요조사</li></td></tr>
+	</div>
+	<tr><th class="border0">&nbsp;연구성과<a href="https://www.cdc.go.kr/board/board.es?mid=a40801000000&bid=0050" target="_blank"><img src="D:\work\img\index01\link.png"></a><span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></td></tr>
+	<tr><th class="border0">&nbsp;연구자원인프라<a href="http://www.cdc.go.kr/contents.es?mid=a40401010000" target="_blank"><img src="D:\work\img\index01\link.png"></a><span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border0">&nbsp;국립보건연구원 바로가기<a href="http://www.nih.go.kr/" target="_blank"><img src="D:\work\img\index01\link.png"></a><span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+</table>
+</aside>
+<section id="section3">
+	<span id="font2">질병연구</span>
+</section>
+<section id="section2">
+	<img id="s01" src="D:\work\img\index02\s01.png">
+	<aside id="aside2">
+	<h4>감염병과 만성병의 기전과 예방·치료·관리에 관한 연구와 환경과 유전 요인에 대한 분석연구를 바탕으로 국민 건강을 지킬 과학적 근거와 수단을 마련합니다. <p>
+또한, 국가 보건의료 연구 인프라를 구축·운영을 통해 연구자원과 정보를 제공하여 질병극복과 보건의료의 발전의 기반을 마련하고 있습니다.</h4>
+</aside>
+</section>
+<div class="clear"></div>
+<section id="section4">
+	<div id="box"><a href="http://www.cdc.go.kr/contents.es?mid=a40501010000"> 감염병연구 ></a></div> 
+	<div id="box"><a href="http://www.cdc.go.kr/contents.es?mid=a40502010100">만성질환 ></a></div> 
+	<div id="box"><a href="http://www.cdc.go.kr/contents.es?mid=a40503010000"> 유전체연구 ></a></div>
+	<div id="box"><a href="http://www.cdc.go.kr/contents.es?mid=a40504010000"> 한국인유전체역학조사사업 ></a></div> 
+	<div id="box"><a href="http://www.cdc.go.kr/contents.es?mid=a40505010100"> 생명정보연구 ></a></div> 
+</section>
+<div class="clear"></div>
+<nav>
+	<ul id="menu4">
+		<li>관련링크 < > </li>
+		<li>임상진료지침 디지털 가이드라인</li>
+		<li>KoGES</li>
+		<li>질병관리본부국제학술지(Osong PHRP)</li>
+		<li>만성신장병코호트연구</li>
+		<li>국민건강영양조사</li>
+		<li>국립의과학지식센터</li>
+		<li>보건복지통계</li>
+	</ul>
+</nav>
+<div class="clear"></div>
+<footer>
+	<img src="D:\work\img\index01\f01.png">
+	<img id="f02" src="D:\work\img\index01\f02.png">
+	<img id="f03" src="D:\work\img\index01\f03.png">
+</footer>
+</body>
+</html>

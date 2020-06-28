@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family: "맑은 고딕";
+	font-weight: bold;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #cccccc;
+}	
+header{
+	width: 1200px;
+	height: 90px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+}
+.search{
+	margin-bottom: 10px;
+	margin-left: 45px;
+}
+#eng{
+	float: right;
+	margin-top: 23px;
+}
+nav{
+	width: 1200px;
+	height: 60px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-top: 5px;
+}
+nav:hover{
+	cursor: pointer;
+}
+nav a{
+	color: #000000;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+nav table{
+	border-collapse: collapse;
+	display: inline;
+}
+nav tr{
+	font-size: 12px;
+}
+nav td{
+	width: 170px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+nav td:hover{
+	background-color: #21a089;
+	color: white;
+}
+nav table a:hover{
+	border:0px solid #cccccc;
+}
+.dropdown{
+	display: block;
+	position: absolute;
+}
+.dropdownContents{
+	display: none;
+	position: absolute;
+	width: 1200px;
+	height: 475px;
+	background-color: #ffffff;
+}
+.dropdownContents a:hover{
+	color: #ffffff;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+	border: 1px solid #cccccc;
+	cursor: pointer;
+}
+#menu1 li{
+	display: inline-block;
+	font-size: 18px;
+	margin:20px 22px;
+}
+#green1{
+	color: #21a089;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #21a089;
+}
+#green1:hover{
+	cursor: pointer;
+}
+#menu2 li{
+	display: inline-block;
+	font-size: 16px;
+	text-align: left;
+}
+#menu2 li:hover{
+	color: #21a089;
+}
+.margin1{
+	margin:20px 110px 20px 20px;
+}
+.margin2{
+	margin: 20px 110px 20px 10px;
+}
+.margin3{
+	margin: 20px 60px 20px 10px;
+}
+#t01{
+	margin-left: 25px;
+}
+#t02{
+	margin-left: 13px;
+}
+#t03{
+	margin-left: 15px;
+}
+#t04{
+	margin-left: 42px;
+}
+section{
+	width: 880px;
+	height: 1180px;
+	border: 0px solid #cccccc;
+	margin-left: 300px;
+	padding: 5px 10px 10px 10px;
+}
+section div table{
+	border-collapse: collapse;
+	border: solid 1px #cccccc;
+	margin-top: 40px;
+}
+section div td{
+	width: 220px;
+	text-align: center;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #f5f6fa;
+}
+section div td:hover{
+	background-color: #edeef3;
+	cursor: pointer;
+}
+#section1{
+	width: 1180px;
+	height: 45px;
+	border: 0px solid #cccccc;
+	margin-top: 5px;
+	margin-left: 0;
+}
+#home{
+	float: right;
+	margin-top: 35px;
+}
+.green2{
+	color: #21a089;
+}
+aside{
+	float: left;
+	width: 290px;
+	height: 750px;
+	border: 0px solid #cccccc;
+	padding-top: 5px;
+}
+aside table{
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+aside tr{
+	font-weight: bold;
+	font-size: 17px;
+	color: #333333;
+}
+aside th{
+	padding: 15px 0;
+	text-align: left;
+}
+aside th:hover{
+	cursor: pointer;
+}
+aside li{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+aside li:hover{
+	text-decoration: underline;
+	font-size: 17px;
+	cursor: pointer;
+}
+#font1{
+	font-size: 25px;
+	color: #555555;
+	padding-top: 10px;
+}
+#green3{
+	background-color: #21a089;
+	color: #ffffff;
+	border-top: 1px solid #cccccc;
+}
+.rotate{
+	float: right;
+}
+.rotate:hover{
+	transform: rotate(180deg);
+}
+.backcolor{
+	background-color: #f5f6fa;
+}
+.border{
+	border-bottom: 1px solid #cccccc;
+}
+#font2{
+	font-size: 27px;
+	padding-bottom: 20px;
+}
+#nav1{
+	width: 880px;
+	height: 30px;
+	padding-top: 11px;
+	border-top: 2px solid #000000;
+	margin-top: 20px;
+}
+#font3{
+	font-size: 14px;
+}
+.gray{
+	color: #666666;
+}
+#eye{
+	float: right;
+}
+.tdcolor{
+	background-color: white;
+	color: #043763;
+	border: solid 1px #043763;
+	border-bottom: solid 5px #043763;
+}
+#list1{
+	padding-left: 30px;
+}
+.list2{
+	color: #043763;
+	list-style-image: url('D:/work/img/index01/liststyle.png');
+	font-size: 20px;
+	margin: 30px 0;
+}
+.list3{
+	color: #000000;
+	list-style-image: url('D:/work/img/index01/liststyle2.png');
+	margin: 5px 0;
+}
+#gif{
+	margin: 20px 0;
+}
+#menu3 li{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #57585a;
+	margin: 20px 11px;
+}
+footer{
+	width: 1200px;
+	height: 150px;
+	border: 0px solid #cccccc;
+	margin-bottom: 5px;
+	background-color: #f5f6fa;
+}
+#f02{
+	float: left;
+	margin-top: 10px;
+}
+#f03{
+	float: right;
+	margin-top: 5px;
+}
+</style>
+</head>
+<body id="page">
+<header>
+	<div>	
+	<a href='index00.html'><img src="D:\work\img\index01\kcdc.png"></a>
+	<img class="search" src="D:\work\img\index01\search01.png">
+	<img class="search" src="D:\work\img\index01\search02.png">
+	<img id="eng" src="D:\work\img\index01\eng.png">
+	</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<div class="dropdown">
+	<ul id="menu1">
+		<li><a href='index01.html'>감염병</a></li>
+		<li>건강정보 </li>
+		<li id="green1">정책정보</li>
+		<li><a href='index03.html'>연구개발</a></li>
+		<li>알림·자료</li>
+		<li>간행물·통계</li>
+		<li><a href='index04.html'>민원·정보공개</a></li>
+		<li><a href='index05.html'>기관소개</a></li>
+		<li>사업별홈페이지</li>
+	</ul>
+	<ul id="menu2" class="dropdownContents">
+		<li class="margin1">감염병</li>
+		<li class="margin2">생물안전</li>
+		<li class="margin2">만성질환</li>
+		<li class="margin2">기후변화</li>	
+		<li class="margin3">의료방사선안전관리</li>
+		<li class="margin3">장기·조직·혈액관리</li>
+			<table border="0" id="t01">
+				<tr>
+					<td>감염병위기대응</td>
+				</tr>
+				<tr>
+					<td>수인성식품매개감염병관리</td>
+				</tr>
+				<tr>
+					<td>호흡기감염병관리</td>
+				</tr>
+				<tr>
+					<td>인수공통감염병관리</td>
+				</tr>
+				<tr>
+					<td>결핵관리</td>
+				</tr>
+				<tr>
+					<td>후천성면역결핍증관리</td>
+				</tr>
+				<tr>
+					<td>의료감염관리</td>
+				</tr>
+				<tr>
+					<td>감염병실험분석</td>
+				</tr>
+				<tr>
+					<td><a href="http://nqs.cdc.go.kr/nqs/main.do" target="_blank">검역관리<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+				<tr>
+					<td>감염병감시체계</td>
+				</tr>
+				<tr>
+					<td>감염병정보화사업</td>
+				</tr>
+				<tr>
+					<td>시도감염병관리지원단</td>
+				</tr>
+				</table>
+				<table border="0">
+				 <tr>
+					<td>생물안전및보안</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cdc.go.kr/contents.es?mid=a40602010000" target="_blank">고위험병원체국가관리<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cdc.go.kr/contents.es?mid=a40603010000" target="_blank">유전자변형생물체국가승인<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cdc.go.kr/contents.es?mid=a40604090000" target="_blank">생물안전연구시설국가안전관리<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+				<tr>
+					<td><a href="https://www.cdc.go.kr/board/board.es?mid=a40605010000&bid=0049&cg_code=C01" target="_blank">병원체생물안전정보<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+				<tr>
+					<td><a href="https://www.cdc.go.kr/board/board.es?mid=a40606010000&bid=0041" target="_blank">자료실<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+			</table>
+			<table border="0" id="t02">
+				 <tr>
+					<td>건강조사</td>
+				</tr>
+				<tr>
+					<td>만성질환예방관리</td>
+				</tr>
+				<tr>
+					<td>기준관리</td>
+				</tr>
+				<tr>
+					<td><a href="http://www.cdc.go.kr/contents.es?mid=a40502040100" target="_blank">희귀질환관리<img src="D:\work\img\index01\link02.png"></a></td>
+				</tr>
+			</table>
+			<table border="0" id="t03">
+				 <tr>
+					<td>폭염</td>
+				</tr>
+				<tr>
+					<td>한파</td>
+				</tr>
+				<tr>
+					<td>미세먼지</td>
+				</tr>
+				<tr>
+					<td>기후변화건강적응대책</td>
+				</tr>
+			</table>
+			<table border="0" id="t03">
+				 <tr>
+					<td>방사선피폭및방어</td>
+				</tr>
+				<tr>
+					<td>의료방사선게시판</td>
+				</tr>
+			</table>
+			<table border="0" id="t04">
+				 <tr>
+					<td>장기·인체조직관리</td>
+				</tr>
+				<tr>
+					<td>혈액안전감시</td>
+				</tr>
+			</table>
+	</ul>
+	</div>
+</nav>
+<div class="clear"></div>
+<section id="section1">
+	<div id="home"><img src="D:\work\img\index01\home.png"> > 정책정보 > 감염병 > 감염병위기대응 ><span class="green2">긴급상황센터</span> </div>
+</section>
+<div class="clear"></div>
+<aside>
+	<span id="font1"> 정책정보
+	<table border="0" width="290">
+	<tr><th id="green3">&nbsp;감염병<span class="rotate"><img src="D:\work\img\index01\up.png"></span></th></tr>
+		<div>
+		<tr><td class="backcolor"><li class="green2">감염병위기대응</li></td></tr>
+		<tr><td class="backcolor"><li>수인성식품매개감염병관리</li></td></tr>
+		<tr><td class="backcolor"><li>호흡기감염병관리</li></td></tr>
+		<tr><td class="backcolor"><li>인수공통감염병관리</li></td></tr>
+		<tr><td class="backcolor"><li>결핵관리</li></td></tr>
+		<tr><td class="backcolor"><li>후천성면역결핍증관리</li></td></tr>
+		<tr><td class="backcolor"><li>의료감염관리</li></td></tr>
+		<tr><td class="backcolor"><li>감염병실험분석</li></td></tr>
+		<tr><td class="backcolor"><li>검역관리</li></td></tr>
+		<tr><td class="backcolor"><li>감염병감시체계</li></td></tr>
+		<tr><td class="backcolor"><li>감염병정보화사업</li></td></tr>
+		<tr><td class="backcolor"><li>시도감염병관리지원단</li></td></tr>
+	</div>
+	<tr><th class="border">&nbsp;생물안전<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border">&nbsp;만성질환<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border">&nbsp;기후변화<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border">&nbsp;의료방사선안전관리<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+	<tr><th class="border">&nbsp;장기·조직·혈액관리<span class="rotate"><img src="D:\work\img\index01\down.png"></span></th></tr>
+</table>
+</aside>
+<section>
+	<span id="font2">감염병위기대응</span>
+	<nav id="nav1">
+	<div id="font3">
+		<span class="gray">작성일</span> 2019-06-10 
+		<span class="gray">| 최종수정일</span> 2019-07-22 
+		<span class="gray">| 담당부서</span> 위기대응생물테러총괄과
+		<span class="gray">| 연락처</span> 043-719-9386
+		<span id="eye"><img src="D:\work\img\index01\eye.png">86,481</span>
+	</div>
+	</nav>
+	<div>
+		<table border="1" width="880">
+			<tr>
+				<td class="tdcolor">긴급상황센터</td>
+				<td>긴급상황실</td>
+				<td>감염병위기시대응체계</td>
+				<td>중앙역학조사관</td>
+			</tr>
+			<tr>
+				<td>감염병위기분석평가</td>
+				<td>국제협력네트워크</td>
+				<td>신종감염병관리</td>
+				<td>신종감염병현황</td>
+			</tr>
+		</table>
+	</div>
+		<ul id="list1">
+			<li class="list2">설치목적</li>
+				<ul>
+					<li class="list3">긴급상황센터는 감염병 위기상황의 조기인지(early detection)와 신속대응(rapid response)을 통해 감염병 확산을 차단하여 피해를 최소화</li>
+					<li class="list3">모든 감염병 정보를 통합적으로 관리하고, 유관기관과 협력하여 현장 대응을 지휘, 통제 및 지원</li>
+				</ul>
+			<li class="list2">기능</li>
+				<ul>
+					<li class="list3">24시간 긴급상황실 운영을 통해 국내외 감염병 상시 감시·분석, 대응 및 국내외 공조 강화</li>
+					<li class="list3">위기시 상황평가 및 즉각대응팀 투입, 유관기관 협조 등 지휘통제</li>
+					<li class="list3">신종감염병 매뉴얼 개발 및 훈련, 항바이러스제·격리병상 등 자원 비축, 생물테러 등 위기 대비·대응</li>
+				</ul>
+			<li class="list2">조직소개</li>
+				<ul>
+					<li class="list3">상시정보수집·분석 → 위기평가 → 신속대응 판단 → 역할 조정·지원 과정이 유기적으로 연계되도록 부서 간의 업무 협조 체계 구축</li>
+					<li class="list3">위기대응생물테러총괄과, 검역지원과, 자원관리과, 위기분석국제협력과, 신종감염병대응과로 구성되며, 위기대응생물테러총괄과는 24시간 긴급상황실 운영</li>
+					<img id="gif" src="D:\work\img\index02\section01.gif" width="850">
+					<li class="list3">(흐름도) 24시간 상황실 운영을 통하여 국내·외 감염병 정보를 상시 수집 → 감염병 발생에 대한 상시 대응 체계 유지 → 감염병 위기상황 감지 시 신속히 위기 수준 평가 → 현장 초동 대응을 위한 즉각대응팀 파견 → 현장 상황 지휘 통제 → (유관기관 및 전문가와 공유하여 협력) </li>
+				</ul>
+		</ul>
+</section>
+<div class="clear"></div>
+<nav>
+	<ul id="menu3">
+		<li>관련링크 < > </li>
+		<li>임상진료지침 디지털 가이드라인</li>
+		<li>KoGES</li>
+		<li>질병관리본부국제학술지(Osong PHRP)</li>
+		<li>만성신장병코호트연구</li>
+		<li>국민건강영양조사</li>
+		<li>국립의과학지식센터</li>
+		<li>보건복지통계</li>
+	</ul>
+</nav>
+<div class="clear"></div>
+<footer>
+	<img src="D:\work\img\index01\f01.png">
+	<img id="f02" src="D:\work\img\index01\f02.png">
+	<img id="f03" src="D:\work\img\index01\f03.png">
+</footer>
+</body>
+</html>
