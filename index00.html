@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>main</title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family:"맑은 고딕";
+}
+.clear{
+	clear: both;
+}
+body{
+	margin: auto;
+	width:193mm;
+	height:344mm;
+	background:#000;
+	border:solid 1px #fff;
+	color:#fff;
+}
+#aside1{
+	width:110mm;
+	height:60mm;
+	border:solid 1px #fff;
+	float:left;
+}
+#aside2{
+	width:80mm;
+	height:60mm;
+	border:solid 1px #fff;
+	float:right;
+}
+#section1{
+	height:180mm;
+	border:solid 1px #fff;
+	margin:5px 0;
+	font-size: 20px;
+	text-align: center;
+	line-height: 180mm;
+}
+#section2{
+	height:80mm;
+	border:solid 0px #fff;
+	margin-bottom:5px;
+}
+footer{
+	height: 15mm;
+	border:solid 0px #fff;
+	margin-top: 5px;
+}
+#today{
+	height: 49%;
+	border:solid 0px #fff;
+	font-size: 15px;
+	padding-left: 5px;
+}
+#weather{
+	height: 49%;
+	border:solid 0px #fff;
+	font-size: 15px;
+	padding-left: 5px;
+}
+#news{
+	width:70mm;
+	height:50mm;
+	border-radius: 10px;
+	color: #fff;
+	padding:5px;
+	font-size: 15px;
+}
+#user{
+	height:10mm;
+	border:0px solid #fff;
+	font-size: 15px;
+}
+#stock{
+	height:70mm;
+	line-height: 70mm;
+	border:0px solid #fff;
+	font-size: 15px;
+	text-align: center;
+}
+#youtube{
+	background:white;
+	border-radius: 10px;
+}
+#space{
+	padding-left: 20px;
+}
+table{
+	color:#fff;
+}
+table td{
+	color: #000;
+}
+</style>
+</head>
+<body>
+<aside id="aside1">
+	<div id="today">
+		Today
+	</div>
+	<div id="weather">
+		Weather
+	</div>
+</aside> <!-- 시간, 날씨 -->
+<aside id="aside2">
+	<div id="news">
+		News
+	</div>
+</aside> <!-- 뉴스 -->
+<div class="clear"></div>
+<section id="section1">
+	지문을 입력하세요
+</section> <!-- 거울 -->
+<div class="clear"></div>
+<section id="section2">
+	<div id="user">사용자 정보<!-- 사용자 정보 표시 --></div>
+	<div id="stock">주식 정보<!-- 주식 --></div>
+</section> <!-- 주식정보 -->
+<footer>
+<div id="youtube">
+	<table border="0">
+		<tr>
+			<td><img src="D:\work\img2\youtube.png" width="60"></td>
+			<td id="space"><!-- 유튜브 제목 연동 --></td>
+		</tr>
+	</table>
+</div>
+</footer> <!-- 유튜브 -->
+</body>
+</html>
