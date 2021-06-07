@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>main</title>
+<style type="text/css">
+*{
+	padding:0;
+	margin: 0;
+	font-family:"맑은 고딕";
+}
+.clear{
+	clear: both;
+}
+body{
+	margin: auto;
+	width:193.59mm;
+	height:344.16mm;
+	background:#000;
+	border:solid 1px #ffffff;
+	color:#fff;
+}
+hr{
+	margin-top: 5px;
+	border:solid 1px;
+	color: #ffffff;
+}
+#aside1{
+	width:110mm;
+	height:60mm;
+	border:solid 1px #ffffff;
+	float:left;
+}
+#aside2{
+	width:80mm;
+	height:60mm;
+	border:solid 1px #ffffff;
+	float:right;
+}
+#section1{
+	height:180mm;
+	border:solid 1px #ffffff;
+	margin:5px 0;
+}
+#section2{
+	height:80mm;
+	border:solid 1px #ffffff;
+	margin-bottom:5px;
+}
+footer{
+	height: 15mm;
+	border:solid 1px #ffffff;
+	margin-top: 5px;
+}
+#today{
+	height: 49%;
+	border:solid 1px #ffffff;
+	font-size: 20px;
+}
+#weather{
+	height: 49%;
+	border:solid 1px #ffffff;
+	font-size: 20px;
+}
+#news{
+	width:70mm;
+	height:50mm;
+	border-radius: 10px;
+	color: #ffffff;
+	padding:5mm;
+	font-size: 20px;
+}
+#user{
+	height:10mm;
+	border:0px solid #ffffff;
+}
+#stock{
+	height:70mm;
+	line-height: 70mm;
+	border:1px solid #ffffff;
+	text-align: center;
+}
+#youtube{
+	background:white;
+	border-radius: 10px;
+}
+table{
+	color:#ffffff;
+}
+</style>
+</head>
+<body>
+<aside id="aside1">
+	<div id="today">
+		<img src="D:\work\img2\clock.png" width="20">
+		Today
+	</div>
+	<div id="weather">
+		<img src="D:\work\img2\cloud.png" width="20">
+		Weather
+	</div>
+</aside> <!-- 시간, 날씨 -->
+<aside id="aside2">
+	<div id="news">
+		News<hr>
+	</div>
+</aside> <!-- 뉴스 -->
+<div class="clear"></div>
+<section id="section1">
+</section> <!-- 거울 -->
+<div class="clear"></div>
+<section id="section2">
+	<div id="user">사용자 정보<!-- 사용자 정보 표시 --></div>
+	<div id="stock">주식 정보<!-- 주식 --></div>
+</section> <!-- 주식정보 -->
+<footer>
+<div id="youtube">
+	<table border="0">
+		<tr>
+			<td><img src="D:\work\img2\youtube.png"></td>
+			<td><!-- 유튜브 제목 연동 --></td>
+		</tr>
+	</table>
+</div>
+</footer> <!-- 유튜브 -->
+</body>
+</html>
